@@ -1,0 +1,11 @@
+A hash table is the right data structure when one would like to perform fast look ups because, in a hash 
+table, every entry has its own key, which is created by putting one of an entry’s values through a special 
+hash value calculation function that creates a key corresponding directly to that value, which allows for 
+quick look ups because the look up function searches for a single hash key instead of iterating through the 
+entire data structure, as is the case with other forms of data structures. I handled collisions by putting 
+every entry added to the hash table into a linked list at each individual index, so that multiple different 
+entries could be stored at the same index, because they have the same hash value, without rendering other 
+entries at the same index unobtainable. An engineer might choose to use a hash table over using another data 
+structure like a stack, heap, tree, linked list, or even just a regular list when they want to have the 
+ability to look up values inside of the aforementioned data structure of choice more quickly than they likely 
+could when utilizing some of the other data structures that I just mentioned.
